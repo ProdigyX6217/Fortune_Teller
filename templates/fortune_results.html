@@ -1,0 +1,45 @@
+{% block content %}
+<p class='fortune'>Welcome, {{ fortune['name'] }}! Here is your fortune</p>
+
+<p class='fortune' >
+    {% if fortune['beverage'] == 'Tea' %}
+        Drink Tea to Sleep.
+    {% endif %}
+
+    {% if fortune['beverage'] == 'Water' %}
+        Drink Water Every Day.
+    {% endif %}
+
+    {% if fortune['beverage'] == 'Coffee' %}
+        Drink Coffee in the morning.
+    {% endif %}
+
+    {% if fortune['beverage'] == 'Alcohol' %}
+        Drink Alcohol to take the edge off.
+    {% endif %}
+
+    {% if fortune['beverage'] == 'Juice' %}
+        Drink Juice for Diabetes.
+    {% endif %}
+
+    <br>
+    <br>
+
+    {% if fortune['age'] == '60' %}
+        Your age fortune:<br>
+        I don’t want to achieve immortality through my work...I want to achieve it through not dying
+    {% endif %}
+    {% if fortune['age'] == '30' %}
+        Your age fortune:<br>
+        How young can you die of old age?
+    {% endif %}
+    {% if fortune['age'] == '100' %}
+        Your age fortune:<br>
+        You know you’re getting old when you get that one candle on the cake. It’s like, “See if you can blow this out.”
+    {% endif %}
+</p>
+
+
+
+
+{% endblock %}

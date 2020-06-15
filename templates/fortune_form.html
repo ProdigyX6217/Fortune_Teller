@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE> -->
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fame Or Fortune?: Fill Out The Form.</title>
+    </head>
+
+    <body>
+        <p style = "font-family:'Courier New', Courier, monospace;">
+            Fill out the form below to determine your future.
+            </p>
+            
+    <form action= '/fortune_results' methods="GET">
+        <br>
+        <h2>Name?</h2>
+        </br>
+        <input type='text' name='name' value='Type Full Name'>
+
+        <br>
+        <h2>Age?</h2>
+        </br>
+        <input type='text' name='age' value=''>
+
+        <br>
+        <h2>Favorite Beverage?</h2>
+        <select name = "beverage">
+        <option value="Tea">Tea</option>
+        <option value="Water">Water</option>
+        <option value="Coffee">Coffee</option>
+        <option value="Alcohol">Alcohol</option>
+        <option value="Juice">Juice</option>
+        </select>
+        </br>
+
+        <br>
+        <h2>Favorite Animal?</h2>
+        </br>
+        <input type = "radio" name = "animal" value = "Chimera"> Chimera<br>
+        <input type = "radio" name = "animal" value = "Dragon"> Dragon<br>
+        <input type = "radio" name = "animal" value = "Kraken"> Kraken<br>
+        <input type = "radio" name = "animal" value = "Griffin"> Griffin<br>
+
+        <br>
+        <h2>Favorite City?</h2>
+        </br>
+        <input type = "checkbox" name = "city" value = "TYO">Tokyo,Japan<br>
+        <input type = "checkbox" name = "city" value = "NYC">New York, New York<br>
+        <input type = "checkbox" name = "city" value = "LDN"> London, England<br>
+        <input type = "checkbox" name = "city" value = "POS"> Port of Spain, Trinidad and Tobago<br>
+    
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+    </body>
+</html>
