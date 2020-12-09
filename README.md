@@ -13,3 +13,6 @@ docker build -t fortuneteller .
 ```bash
 docker run -p 5000:5000 --rm --name fortuneteller-container fortuneteller
 ```
+
+# Uptime monitored by FreshPing -->
+https://statuspage.freshping.io/49118-dom
